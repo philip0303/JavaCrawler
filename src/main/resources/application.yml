@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    username: root
+    password: Lmz20160817
+    url: jdbc:mysql://rm-bp10y66l36s4ta95c7o.mysql.rds.aliyuncs.com:3306/druk_data?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServer2008Dialect
+  application:
+    name: druk
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+#  mvc:
+#    static-path-pattern: /static/**
+server:
+  port: 8090
+  servlet:
+    context-path: /drukList
+logging:
+  path: ./logs
