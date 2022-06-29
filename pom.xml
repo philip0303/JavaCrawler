@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
         <sofa.boot.version>3.1.5</sofa.boot.version>
         <fastjson.version>1.2.58</fastjson.version>
-        <apache.poi>3.17</apache.poi>
+        <apache.poi>4.1.1</apache.poi>
     </properties>
 
     <dependencies>
